@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Book a Van | You Can Travel and Tours</title>
+<meta name="description" content="See your van rental price in a minute. Driver, fuel, and travel insurance included.">
+<meta name="theme-color" content="#171717">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+
+<!-- Link preview in Messenger and Facebook.
+     Replace YOUR-SITE-LINK with your GitHub Pages link, e.g. https://youcantravel.github.io/book -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Book a Van | You Can Travel and Tours">
+<meta property="og:description" content="See your price in a minute. Driver, fuel, and travel insurance included.">
+<meta property="og:image" content="YOUR-SITE-LINK/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="YOUR-SITE-LINK/">
+
+<style>
+  html, body { margin: 0; height: 100%; background: #171717; }
+  iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; display: block; background: transparent; }
+  .loading { position: fixed; inset: 0; display: grid; place-items: center; color: #f0a12c; font: 600 16px/1.4 system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<div class="loading">Loading…</div>
+<iframe
+  id="app"
+  title="Book a Van"
+  allow="clipboard-write"
+  src="PASTE-YOUR-WEB-APP-LINK-HERE"></iframe>
+<script>
+  // Hide "Loading…" once the booking app has loaded
+  document.getElementById("app").addEventListener("load", function () {
+    document.querySelector(".loading").remove();
+  });
+</script>
+</body>
+</html>
